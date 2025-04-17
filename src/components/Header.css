@@ -1,0 +1,16 @@
+.header_container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header_container h1 {
+  color: aqua;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.header_container p {
+  color: white;
+  margin-top: 0;
+  font-size: 14px;
+}
