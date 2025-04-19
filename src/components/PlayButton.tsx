@@ -1,10 +1,16 @@
 import "./PlayButton.css";
-function PlayButton() {
+
+type PlayButtonProps = {
+  cell: "X" | "O" | null;
+  onClick: () => void;
+};
+
+const PlayButton: React.FC<PlayButtonProps> = ({ cell, onClick }) => {
   return (
-    <button className="play_button">
-      <span></span>
+    <button className="play_button" onClick={onClick}>
+      <span>{cell}</span>
     </button>
   );
-}
+};
 
 export default PlayButton;
